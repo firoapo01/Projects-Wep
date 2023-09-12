@@ -1,0 +1,102 @@
+<html>
+  <head>
+    <title>Position Absolute Relative Practice</title>
+    <style>
+      .product-img-container{
+        position: relative;
+        display: inline-block;
+        height: 300px;
+        width: 350px;
+      }
+      .product-img{
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+      }
+      .off{
+        font-family: Arial;
+        font-size: 15px;
+        position: absolute;
+        top: 15px;
+        right: 44px;
+        background-color: black;
+        color: white;
+        padding: 6px 10px 6px 10px;
+      }
+      .product-img-container .out-side-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        height: 70px;
+        background-color: rgba(255, 255, 255, 0.7);
+        cursor: pointer;
+        opacity: 0;
+        transition: 0.18s;
+      }
+      .product-img-container:hover .out-side-button,
+      .product-img-container:hover .add-to-cart-button {
+        opacity: 1;
+      }
+      .product-img-container .add-to-cart-button{
+        padding: 8px 25px 8px 25px;
+        font-family: Arial;
+        font-size: 12px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+        cursor: pointer;
+        opacity: 0;
+        transition: 0.18s;
+      }
+
+    </style>
+  </head>
+  <body style="
+    padding-top: 35px;
+    height: 3000px;
+  ">
+    <div style="
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      height: 180px;
+      width: 320px;
+      background-color: grey;
+    ">
+    <div style="
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      position: absolute;
+      top: -14px;
+      left: -11px;
+      background-color: black;
+      color: white;
+      padding: 6px 10px 6px 10px;
+      border-radius: 15px;
+      cursor: pointer;
+    ">X</div>
+      <div style="
+        position: absolute;
+        bottom: 5px;
+        right: 10px;
+        background-color: black;
+        color: white;
+        padding: 1px 6px 1px 6px;
+      ">
+        0:29
+      </div>
+    </div>
+    <div class="product-img-container">
+      <img class="product-img" src="photos/ukdripshop_7009ab98cc67edc75ebcf309ff2a7648.jpeg">
+      <div class="out-side-button">
+        <button class="add-to-cart-button">Add to Cart</button>
+      </div>
+      <div class="off">20% OFF</div>
+    </div>
+  </body>
+</html>

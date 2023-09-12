@@ -1,0 +1,109 @@
+
+    .video-grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 16px;
+      row-gap: 42px;
+    }
+    
+    @media (min-width: 1200px) {
+      .video-grid { 
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+    }
+
+    @media (min-width: 751) and (max-width: 1199) {
+      .video-grid { 
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 750px) {
+      .video-grid { 
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    .thumbnail-row{
+      position: relative;
+      margin-bottom: 7px;
+    }
+    .thumbnail{
+      width: 100%;
+    }
+    .video-time{
+      font-size: 12px;
+      font-weight: 500;
+      padding: 4px;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.9);
+      color: white;
+      bottom: 12px;
+      right: 4px;
+      border-radius: 2px;
+    }
+    .video-info-grid{
+      display: grid;
+      grid-template-columns: 48px 1fr;
+    }
+    .video-title{
+      color: black;
+      margin-top: 0px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      margin-bottom: 10px;
+      text-decoration: underline;
+      text-decoration-color: rgb(244, 247, 253);
+    }
+    .channel-photo-edit{
+      width: 75%;
+      border-radius: 50px;
+      display: inline-block;
+    }
+    .channel-photo-blok{
+      position: relative;
+      cursor: pointer;
+    }
+    .channel-photo-blok .tooltip{
+      position: absolute;
+      display: flex;
+      height: 70px;
+      width: 220px;
+      border-radius: 5px;
+      background-color: white;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15) ;
+      opacity: 0;
+      pointer-events: none;
+    }
+    .channel-photo-blok:hover .tooltip{
+      opacity: 1;
+    }
+    .tooltip img {
+      display: inline-block;
+      height: 50px;
+      width: 50px;
+      border-radius: 25px;
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+    .title-container {
+      margin-left: 12px;
+      margin-top: 14px;
+    }
+    .tooltip .name {
+      font-size: 15px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .tooltip .numbers-of-subscripation {
+      font-size: 12px;
+      color: rgb(105, 105, 105);
+    }
+    .video-author,
+    .video-stats{
+      font-size: 12px;
+      color: #606060;
+    }
+    .video-author{
+      margin-bottom: 4px;
+    }

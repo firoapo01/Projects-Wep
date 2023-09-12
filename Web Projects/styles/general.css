@@ -1,0 +1,16 @@
+
+    p {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    body {
+      /* When you style a container like font somethin somethin its gonna style text in */
+      font-family: Roboto, Arial;
+      margin: 0px;
+      height: 1000px;
+      padding-top: 81px;
+      padding-left: 96px;
+      padding-right: 24px;
+      background-color: rgb(244, 247, 253);
+    }
